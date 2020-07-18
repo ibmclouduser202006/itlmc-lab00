@@ -1,3 +1,2 @@
-FROM open-liberty
-RUN mkdir /config/dropins/app.war
-ADD hello.jsp /config/dropins/app.war/
+FROM nginx
+ADD top.html /usr/share/nginx/html/
